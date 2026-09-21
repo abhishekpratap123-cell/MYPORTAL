@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Portal - Student Resource Hub</title>
+    <!-- FontAwesome Icons for Graduation Cap, Books, etc. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Welcome / Splash Screen -->
+    <div id="welcome-screen">
+        <div class="welcome-card">
+            <div class="welcome-badge"><i class="fa-solid fa-graduation-cap"></i> WELCOME TO STUDY PORTAL</div>
+            <h1>Student Resource Hub</h1>
+            <p class="developer-tag">Designed & Developed by <span>Abhishek Pratap</span></p>
+            <p class="welcome-desc">Access CCSU BCA Notes, CBSE Class 12th Study Material & Practice Quizzes in one place.</p>
+            <button id="enter-btn" class="enter-portal-btn">
+                Open Portal <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Website (Initially Hidden) -->
+    <div id="main-content" style="display: none;">
+        
+        <!-- 1. Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo"><i class="fa-solid fa-graduation-cap logo-icon"></i> Study<span>Portal</span></div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#bca-section"><i class="fa-solid fa-book"></i> CCSU BCA Notes</a></li>
+                <li><a href="#cbse-section"><i class="fa-solid fa-school"></i> Class 12th CBSE</a></li>
+                <li><a href="#quiz"><i class="fa-solid fa-lightbulb"></i> Practice Quiz</a></li>
+            </ul>
+        </nav>
+
+        <!-- 2. Hero / Welcome Section -->
+        <header id="home" class="hero">
+            <div class="hero-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h1>Student Resource Portal</h1>
+            <p>Access notes, PDFs, and practice quizzes for CCSU BCA and Class 12th CBSE Board in one place.</p>
+            
+            <!-- Search Bar -->
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Search for subjects, semesters, topics...">
+            </div>
+        </header>
+
+        <!-- 3. CCSU BCA Notes Section -->
+        <section id="bca-section" class="container">
+            <h2><i class="fa-solid fa-book-open"></i> CCS University - BCA Notes</h2>
+            <div class="card-grid">
+                
+                <!-- BCA Semester 1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-laptop-code card-icon"></i>
+                        <h3>BCA 1st Semester</h3>
+                    </div>
+                    <p>Select a subject to view/download notes:</p>
+                    <div class="btn-group">
+                        <a href="NOTES/CCSU/SEMESTER 1/CCSU_BCA_Sem1_Computer_Architecture_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Computer Architecture</a>
+                        <a href="NOTES/CCSU/SEMESTER 1/CCSU_BCA_Sem1_Environmental_Science_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Environmental Science</a>
+                        <a href="NOTES/CCSU/SEMESTER 1/CCSU_BCA_Sem1_General_English_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> General English</a>
+                        <a href="NOTES/CCSU/SEMESTER 1/CCSU_BCA_Sem1_Indian_Knowledge_System_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Indian Knowledge System</a>
+                        <a href="NOTES/CCSU/SEMESTER 1/CCSU_BCA_Sem1_Mathematical_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Mathematics</a>
+                        <a href="NOTES/CCSU/SEMESTER 1/CCSU_BCA_Sem1_Problem_Solving_Tech_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Problem Solving Tech</a>
+                    </div>
+                </div>
+
+                <!-- BCA Semester 2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-code card-icon"></i>
+                        <h3>BCA 2nd Semester</h3>
+                    </div>
+                    <p>Select a subject to view/download notes:</p>
+                    <div class="btn-group">
+                        <a href="NOTES/CCSU/SEMESTER 2/CCSU_BCA_Sem2_Computer_Organization_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Computer Organization</a>
+                        <a href="NOTES/CCSU/SEMESTER 2/CCSU_BCA_Sem2_Computer_Programming_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Computer Programming</a>
+                        <a href="NOTES/CCSU/SEMESTER 2/CCSU_BCA_Sem2_Data_Structures_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Data Structures</a>
+                        <a href="NOTES/CCSU/SEMESTER 2/CCSU_BCA_Sem2_Digital_Electronics_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Digital Electronics</a>
+                        <a href="NOTES/CCSU/SEMESTER 2/CCSU_BCA_Sem2_Discrete_Mathematics_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Discrete Mathematics</a>
+                        <a href="NOTES/CCSU/SEMESTER 2/CCSU_BCA_Sem2_Object_Oriented_Prog_Important_Notes_2026.pdf" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> Object Oriented Programming</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Class 12th CBSE Board Section -->
+        <section id="cbse-section" class="container">
+            <h2><i class="fa-solid fa-microscope"></i> Class 12th CBSE Board (Important Topics)</h2>
+            <div class="card-grid">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-atom card-icon"></i>
+                        <h3>Class 12 Physics</h3>
+                    </div>
+                    <p>Electrostatics, Current Electricity, Optics, Magnetism, Modern Physics formulas & derivations.</p>
+                    <a href="#" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> View Physics Notes</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-calculator card-icon"></i>
+                        <h3>Class 12 Mathematics</h3>
+                    </div>
+                    <p>Calculus (Integration & Differentiation), Matrices, Determinants, 3D Geometry, Vectors.</p>
+                    <a href="#" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> View Maths Notes</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-network-wired card-icon"></i>
+                        <h3>Class 12 Computer Science / IP</h3>
+                    </div>
+                    <p>Python Programming, SQL Queries, Data Structures (Stack & Queue), Computer Networks.</p>
+                    <a href="#" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> View CS / IP Notes</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-flask card-icon"></i>
+                        <h3>Class 12 Chemistry</h3>
+                    </div>
+                    <p>Organic Reaction Mechanisms, Electrochemistry, Solutions, Coordination Compounds.</p>
+                    <a href="#" target="_blank" class="btn"><i class="fa-solid fa-file-pdf"></i> View Chemistry Notes</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. MCQ Quiz Section -->
+        <section id="quiz" class="container">
+            <h2><i class="fa-solid fa-pen-to-square"></i> Practice Quiz</h2>
+            <div class="card quiz-card">
+                <h3 id="question-text">Question will appear here...</h3>
+                <div id="quiz-options">
+                    <!-- Options JS se load honge -->
+                </div>
+                <p id="quiz-score"></p>
+            </div>
+        </section>
+
+        <!-- Footer Branding -->
+        <footer>
+            <p>© 2026 StudyPortal | Designed & Developed with <i class="fa-solid fa-heart" style="color: #ef4444;"></i> by <strong>Abhishek Pratap</strong></p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
